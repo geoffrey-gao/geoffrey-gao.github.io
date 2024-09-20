@@ -6,11 +6,107 @@ body {
     margin:10px;
 }
 
+
+@font-face {
+    src:url("fonrs/");
+    font-family:"customfont";
+}
+
+@keyframes coloreffect {
+    0% {
+        color:pink;
+    }
+    50% {
+        color:blue;
+    }
+    100% {
+        color:lime;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:300px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+img {
+    width:100%;
+}
+
+video {
+    width:100%;
+}
+
+
+
+
+/* Container holding the image and the text */
+div.imgcontainer {
+    position:relative;
+    text-align:center;
+    color:white;
+}
+
+div.centered {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+div.bottom-left {
+    position:absolute;
+    bottom:5px;
+    left:5px;
+}
+
+div.bottom-right {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+div.top-left {
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+
+div.top-right {
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
+
+
+
+
 /* Typography */
 
 div.largetext {
     font-size:355px;
     line-height:300px;
+}
+
+div.largetextvw {
+    font-size:40vw;
+    line-height:40vw;
+    animation:coloreffect 5s infinite alternate linear;
 }
 
 div.mediumtext {
@@ -23,7 +119,11 @@ div.smalltext {
     line-height:15px;
 }
 
-/* colours */
+/* colors */
+
+div.blacktext {
+    color:black;
+}
 
 div.beigetext {
     color:beige;
@@ -45,8 +145,33 @@ div.bluebg {
     background-color:#226ce0;
 }
 
+div.whitebg {
+    background-color:white;
+}
+
 
 /* layout */
+
+div.width20 {
+    width:20%;
+}
+
+div.width40 {
+    width:40%;
+}
+
+div.width60 {
+    width:60%;
+}
+
+div.width50 {
+    width:50%;
+}
+
+div.width80 {
+    width:80%;
+}
+
 
 div.width33 {
     width:33%;
@@ -60,19 +185,84 @@ div.width100 {
     width:100;
 }
 
+div.square {
+    height:20vw;
+    width:20vw;
+}
+
+div.portrait {
+    height:20vw;
+    width:15vw;
+}
+
+div.landscape {
+    height:20vw;
+    width:30vw;
+}
+
+div.thumbnails img {
+    width: 100%;
+    height:100%;
+}
+
+div.mb50 {
+    margin-bottom:50px;
+}
+
+div.mb200 {
+    margin-bottom:200px;
+}
+
+
+div.textcentre {
+    text-align:center;
+}
 
 div.centre {
     margin-left:auto;
     margin-right:auto;
 }
 
-div.left {
+div.ml200 {
+    margin-left:200px;
+}
+
+div.mrauto {
     margin-right:auto;
 }
 
-div.right {
+div.mlauto {
     margin-left:auto;
 }
+
+
+div.circle {
+    width:500px;
+    height:500px;
+    border-radius:100%;
+}
+
+div.container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+
+
+
+
+
+div.move {
+    animation:moveright 0.1s infinite alternate linear;
+}
+
+div.fade {
+    opacity:0;
+    animation:fade 2s linear;
+    animation-delay:5s;
+}
+
 
 
 
