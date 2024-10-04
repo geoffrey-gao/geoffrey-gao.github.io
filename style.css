@@ -1,10 +1,21 @@
 body {
-    background-color:#C39FFF;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:blue;
+    font-family: arial;
     font-weight:bold;
     color:beige;
     margin:10px;
 }
+
+
+img {
+    border: 1px solid white;
+
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
 
 
 @font-face {
@@ -26,10 +37,10 @@ body {
 
 @keyframes moveright {
     0% {
-        margin-left:0px;
+        position:relative;
     }
     100% {
-        margin-left:300px;
+        margin-right:2pt;
     }
 }
 
@@ -141,6 +152,10 @@ div.pinktext {
     color:#f88dad
 }
 
+div.redbg {
+    background-color:red;
+}
+
 div.bluebg {
     background-color:#226ce0;
 }
@@ -187,17 +202,32 @@ div.width100 {
 
 div.square {
     height:20vw;
-    width:20vw;
+    width:19vw;
+    padding:1vw;
 }
 
 div.portrait {
     height:20vw;
-    width:15vw;
+    width:14vw;
+    padding:1vw;
 }
 
 div.landscape {
     height:20vw;
-    width:30vw;
+    width:19vw;
+    padding:1vw;
+}
+
+div.landscapelarge {
+    height:40vw;
+    width:59vw;
+    padding:1vw;
+}
+
+div.wide {
+    height:20vw;
+    width:34.55555555555555vw;
+    padding:1vw;
 }
 
 div.thumbnails img {
@@ -247,20 +277,37 @@ div.container {
     flex-wrap:wrap;
 }
 
+div.flexright {
+    justify-content: flex-end;
+}
 
+
+div.flexcenter {
+    justify-content: center;
+}
+
+div.flexspace {
+    justify-content: space-around;
+}
 
 
 
 
 
 div.move {
-    animation:moveright 0.1s infinite alternate linear;
+    animation:moveright 80ms infinite alternate linear;
 }
 
 div.fade {
     opacity:0;
     animation:fade 2s linear;
     animation-delay:5s;
+}
+
+div.caption {
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
 }
 
 
