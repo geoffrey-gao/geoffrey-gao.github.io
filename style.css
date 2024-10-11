@@ -1,5 +1,5 @@
 body {
-    background-color:blue;
+    background-color:#C42348;
     font-family: arial;
     font-weight:bold;
     color:beige;
@@ -8,19 +8,19 @@ body {
 
 
 img {
-    border: 1px solid white;
-
+    border: 1px solid black;
+    filter: grayscale(100%) sepia(50%) brightness(130%) invert(80%);
 }
-
-img:hover {
-    filter: grayscale(0%);
-}
-
 
 
 @font-face {
-    src:url("fonrs/");
-    font-family:"customfont";
+    src:url("fonts/bugs.woff");
+    font-family:"bugs";
+}
+
+@font-face {
+    src:url("fonts/bugs1.woff");
+    font-family:"bugs1";
 }
 
 @keyframes coloreffect {
@@ -108,6 +108,21 @@ div.top-right {
 
 
 /* Typography */
+
+
+div.cap {
+    font-family:"bugs";
+    font-size:10vw;
+    line-height:10vw;
+    text-align:center;
+}
+
+div.title {
+    font-family:"bugs";
+    font-size:10vw;
+    line-height:20vw;
+    text-align: center;
+}
 
 div.largetext {
     font-size:355px;
@@ -200,9 +215,18 @@ div.width100 {
     width:100;
 }
 
+
+/* image types */
+
 div.square {
     height:20vw;
     width:19vw;
+    padding:1vw;
+}
+
+div.squarelarge {
+    height:40vw;
+    width: 39vw;
     padding:1vw;
 }
 
@@ -212,9 +236,15 @@ div.portrait {
     padding:1vw;
 }
 
+div.portraitlarge {
+    height:40vw;
+    width:29vw;
+    padding:1vw;
+}
+
 div.landscape {
     height:20vw;
-    width:19vw;
+    width:25.666666667vw;
     padding:1vw;
 }
 
@@ -230,9 +260,19 @@ div.wide {
     padding:1vw;
 }
 
+div.widelarge {
+    height:40vw;
+    width:70.111111111111vw;
+    padding:1vw;
+}
+
 div.thumbnails img {
     width: 100%;
     height:100%;
+}
+
+div.mb20 {
+    margin-bottom:20;
 }
 
 div.mb50 {
@@ -275,6 +315,7 @@ div.circle {
 div.container {
     display:flex;
     flex-wrap:wrap;
+
 }
 
 div.flexright {
@@ -290,7 +331,10 @@ div.flexspace {
     justify-content: space-around;
 }
 
-
+div.break {
+    flex-basis:100%;
+    height:0;
+}
 
 
 
@@ -307,7 +351,21 @@ div.fade {
 div.caption {
     width: 100%;
     text-align: center;
-    font-size: 100px;
+    font-size: 75px;
+}
+
+div.nav {
+    font-family:arial;
+    font-weight:bolder;
+    position: fixed;
+    top:10px;
+    left:0px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: 30px;
+    color:lime;
+    mix-blend-mode: exclusion;
 }
 
 
