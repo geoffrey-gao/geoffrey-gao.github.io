@@ -1,7 +1,7 @@
 body {
-    background-color:black;
-    font-family: arial;
-    font-weight:bold;
+    background-color:#13070c;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
     color:beige;
     margin:10px;
 }
@@ -111,14 +111,14 @@ div.top-right {
 
 
 div.cap {
-    font-family:"bugs";
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:10vw;
     line-height:10vw;
     text-align:center;
 }
 
 div.title {
-    font-family:"bugs";
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:10vw;
     line-height:20vw;
     text-align: center;
@@ -271,8 +271,12 @@ div.thumbnails img {
     height:100%;
 }
 
+div.mb10 {
+    margin-bottom:10px;
+}
+
 div.mb20 {
-    margin-bottom:20;
+    margin-bottom:20px;
 }
 
 div.mb50 {
@@ -283,6 +287,9 @@ div.mb200 {
     margin-bottom:200px;
 }
 
+div.mb30 {
+    margin-bottom:30px;
+}
 
 div.textcentre {
     text-align:center;
@@ -293,8 +300,12 @@ div.centre {
     margin-right:auto;
 }
 
-div.ml200 {
-    margin-left:200px;
+div.mrrain {
+    margin-right: 39.2vw;
+}
+
+div.mrborn {
+    margin-right:5.1vw;
 }
 
 div.mrauto {
@@ -354,8 +365,30 @@ div.caption {
     font-size: 75px;
 }
 
+div.endcre {
+    width:79%;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+
+div.endcre2 {
+    width:20%;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+
+div.endcre3 {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    text-align: center;
+}
+
+
 div.nav {
-    font-family:arial;
+    font-family:"bugs1";
     font-weight:bolder;
     position: fixed;
     top:10px;
